@@ -1,0 +1,32 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @include m.tablet {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  &__link {
+    margin-bottom: 2rem;
+    font-weight: 700;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    &--create {
+      color: v.$primary;
+
+      &:visited,
+      &:link {
+        color: v.$primary;
+      }
+    }
+    @include m.tablet {
+      margin-bottom: 0;
+    }
+  }
+}

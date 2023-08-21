@@ -1,0 +1,22 @@
+@use "base/variables" as v;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: v.$fontFamily;
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 3.4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
