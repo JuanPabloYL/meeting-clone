@@ -1,0 +1,55 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.main {
+  &__heading {
+    text-align: center;
+    text-transform: uppercase;
+    color: v.$gray;
+  }
+}
+
+.events {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include m.tablet {
+    flex-direction: row;
+  }
+}
+
+.event {
+  border: 1px solid v.$lightGray;
+  border-radius: 1rem;
+  &__content {
+    padding-inline: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  &__heading {
+    color: v.$gray;
+    margin: 0;
+  }
+  &__host {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    font-size: 1.8rem;
+
+    &-strong {
+      color: v.$gray;
+      font-weight: 700;
+    }
+    &-container {
+      width: 100%;
+    }
+  }
+  &__img {
+    width: 15rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
