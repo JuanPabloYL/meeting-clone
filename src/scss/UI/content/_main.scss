@@ -30,6 +30,9 @@
   &__heading {
     color: v.$gray;
     margin: 0;
+    @include m.tablet {
+      font-size: 2.5rem;
+    }
   }
   &__host {
     margin-top: 2rem;
