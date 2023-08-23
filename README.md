@@ -1,6 +1,5 @@
 # Meeti - Web Meeting Platform
 
-![Meeti Logo](./assets/logo.png)
 
 Meeti is a minimalistic web-based meeting platform. Designed with simplicity
 
@@ -19,7 +18,7 @@ Meeti is a minimalistic web-based meeting platform. Designed with simplicity
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/JuanPabloYL/meeti.git
+   git clone https://github.com/JuanPabloYL/meeti-clone.git
    ```
 
 2. Navigate to the project directory:
